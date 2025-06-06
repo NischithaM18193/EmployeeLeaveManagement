@@ -7,8 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers/" />
     <Folder Include="Middlewares/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../EmployeeLeaveManagement.Infrastructure/EmployeeLeaveManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
   </ItemGroup>
 
 </Project>
