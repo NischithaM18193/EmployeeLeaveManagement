@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement/EmployeeLeaveManagement.csproj",
-      "projectName": "EmployeeLeaveManagement",
-      "projectPath": "/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement/EmployeeLeaveManagement.csproj",
+      "projectUniqueName": "/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement/EmployeeLeaveManagement.API.csproj",
+      "projectName": "EmployeeLeaveManagement.API",
+      "projectPath": "/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement/EmployeeLeaveManagement.API.csproj",
       "packagesPath": "/Users/nischitha/.nuget/packages/",
       "outputPath": "/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement/obj/",
       "projectStyle": "PackageReference",
