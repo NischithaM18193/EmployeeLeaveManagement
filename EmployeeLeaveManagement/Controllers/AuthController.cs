@@ -1,7 +1,11 @@
 using EmployeeLeaveManagement.Application.Interfaces;
 using EmployeeLeaveManagement.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using EmployeeLeaveManagement.Application.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using EmployeeLeaveManagement.Application.Commands;
 
 namespace EmployeeLeaveManagement.API.Controllers
 {
@@ -9,26 +13,29 @@ namespace EmployeeLeaveManagement.API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IUserService _userservice;
-        private readonly IJWTTokenService _jwttokenservice;
+        private readonly IMediator _mediator;
 
-        public AuthController(IUserService userservice, IJWTTokenService jwttokenservice)
+        public AuthController(IMediator mediator)
         {
-            _userservice = userservice;
-            _jwttokenservice = jwttokenservice;
+            _mediator = mediator;
         }
 
-        public IActionResult Login([FromBody] User login)
+        [HttpPost("Login")]
+        public async Task<ActionResult<AuthResponseDTO>> Login([FromBody] LoginCommand loginCommand)
         {
-            var user = _userservice.Authenticate(login.UserName, login.Password);
+            var result = await _mediator.Send(loginCommand);
+            return Ok(result);
+        }
 
-            if (user == null)
+        [HttpPost("Register")]
+        public IActionResult Register([FromBody] RegisterCommand registerCommand)
+        {
+            if (registerCommand == null)
             {
-                return Unauthorized("Invalid Credentials");
+                return BadRequest("Invalid user data.");
             }
-
-            var token = _jwttokenservice.GenerateToken(user);
-            return Ok(new { Token = token });
+            var userId = _mediator.Send(registerCommand);
+            return Ok(new { UserId = userId });
         }
     }
 }
