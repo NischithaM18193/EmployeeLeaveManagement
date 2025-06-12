@@ -13,11 +13,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmployeeLeaveManagement.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00a91f8b2b9fe5593982050472feeb1fba2ce806")]
-=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0bcf43aa8d60afdbd5b1724fe767bebac4de7e0")]
->>>>>>> a20534a (API-UserImplementation - later added to new branch named "Req-APIImplementation")
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00a91f8b2b9fe5593982050472feeb1fba2ce806")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmployeeLeaveManagement.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmployeeLeaveManagement.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
