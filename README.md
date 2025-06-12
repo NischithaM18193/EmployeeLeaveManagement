@@ -1,77 +1,61 @@
-🔐 JWT Authentication (JSON Web Token)
+🧱 1. Structure & Layer Separation
 
-What is it?
-JWT (JSON Web Token) is a compact, URL-safe token format used to securely transmit information between parties.
-It is typically used for stateless authentication in APIs.
+Aspect	🏗️ Traditional Approach	🧼 Clean Architecture
+Structure	Mostly 3-tier: Controller → Service → Repository	Strongly layered: API → Application → Domain → Infrastructure
+Layer Coupling	Tight coupling (UI depends on data layer)	Decoupled, domain-centric, dependency inversion applied
+Flow of Control	Top-down (UI to DB)	Inward — external layers depend on inner layers
+💡 2. Project Organization Traditional:
 
-Structure:
-A JWT looks like this:
-xxxxx.yyyyy.zzzzz
-It has 3 parts:
-Header — contains token type (JWT) and signing algorithm (e.g., HS256)
-Payload — contains claims (user info, permissions, expiry time, etc.)
-Signature — ensures that the token is not tampered with
+Controllers/
+Services/
+Repositories/
+Models/
+Clean Architecture:
 
-How it works?
-User sends login credentials (username/password) to the server.
-Server verifies the credentials.
-If valid, server creates a JWT and signs it.
-Server sends the JWT back to the client.
-Client stores the JWT (usually in local storage or in a cookie).
-On each subsequent request, client sends JWT in Authorization header:
+MyApp.API (UI Layer)
 
-Authorization: Bearer <JWT>
-Server verifies the token and grants access.
+MyApp.Application (Use Cases, DTOs, Interfaces)
 
-Pros
-✅ Stateless (no need to store session on server)
-✅ Can include user info / roles in token
-✅ Portable (works across domains, services)
+MyApp.Domain (Entities, Business Rules)
 
-Cons
-❌ Token cannot be revoked easily unless expiry is short
-❌ If token is stolen, attacker has access until token expires
+MyApp.Infrastructure (EF Core, external services)
 
+🔄 3. Dependency Direction
 
-🔑 OAuth (Open Authorization)
-What is it?
-OAuth is an authorization framework. It lets a user grant limited access to their resources on one service to another service without sharing credentials.
+Aspect	Traditional	Clean Architecture
+Who depends on whom	Business logic depends on data layer	Infrastructure depends on Application & Domain
+Dependency Inversion	❌ Violated	✅ Applied (via interfaces)
+🧪 4. Testability
 
-For example:
-"Sign in with Google"
-"Allow this app to access your GitHub repos"
+Feature	Traditional	Clean Architecture
+Unit Testing	Difficult (tight coupling to EF/DB)	Easy (business logic isolated via interfaces)
+Mocking	Hard (Services use concrete classes)	Easy (Interfaces allow mocking in tests)
+🚀 5. Maintainability & Scalability
 
-OAuth defines several flows, but commonly used is OAuth 2.0.
+Feature	Traditional	Clean Architecture
+Maintainability	Low – changes ripple across layers	High – changes are contained
+Adding new features	Risky – may affect core logic	Safe – separation of concerns
+Microservice migration	Difficult	Easy – clear boundaries exist
+📦 6. Real-World Example 🔧 Traditional: Controller directly calls Service Service calls Repository Repository uses DbContext
 
-Key Actors
-Resource Owner: User
-Client: App requesting access (e.g., Spotify)
-Authorization Server: Issues tokens (e.g., Google Auth server)
-Resource Server: Holds user data (e.g., Google Calendar)
+// Controller var user = userService.GetUser(id);
 
-How it works (simplified)
-Client app redirects user to Authorization Server.
-User authenticates and grants permission.
-Authorization server returns an authorization code to the client.
-Client exchanges code for access token (and optionally refresh token).
-Client uses access token to call Resource Server APIs.
-Tokens involved
-Access token — used to access APIs
-Refresh token — used to get a new access token when old one expires
+🧼 Clean Architecture: Controller sends a MediatR request
 
-Pros
-✅ Allows third-party access without exposing user credentials
-✅ Fine-grained permissions (scope of access)
-✅ Tokens can be revoked
+Handler in Application layer uses interface to get data Infrastructure implements the interface
 
-Cons
-❌ More complex than simple JWT auth
-❌ Requires more infrastructure (auth server, token exchange, etc.)
+// Controller await _mediator.Send(new GetUserQuery(id));
 
-| Aspect       | JWT Authentication           | OAuth 2.0                                   |
-| ------------ | ---------------------------- | ------------------------------------------- |
-| Purpose      | Authentication (who you are) | Authorization (what you can do)             |
-| Token type   | JWT                          | Access token (often JWT, but can be opaque) |
-| Typical use  | API authentication (own app) | Third-party app access                      |
-| Server state | Stateless                    | May be stateless or stateful                |
-| Example      | User logs into app API       | App accesses Google Calendar on your behalf |
+Scenario	Use Traditional	Use Clean Architecture
+Small, simple app	✅	🚫 Overhead
+Legacy system	✅ (for compatibility)	🚫
+Scalable, enterprise app	🚫	✅
+TDD or DDD	🚫	✅
+Microservice-based systems	🚫	✅
+Feature	Traditional	Clean Architecture
+Simplicity (initially)	✅ Easy	❌ Slightly complex
+Long-term Maintainability	❌ Low	✅ High
+Testability	❌ Poor	✅ Excellent
+Reusability	❌ Limited	✅ High
+Decoupling	❌ Weak	✅ Strong
+Learning Curve	✅ Low	❌ Medium
