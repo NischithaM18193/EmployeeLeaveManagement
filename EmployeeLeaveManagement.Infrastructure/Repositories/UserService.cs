@@ -21,7 +21,7 @@ public class UserService : IUserService
         .FirstOrDefault(u => u.UserName == username && u.PasswordHash == password);
     }
 
-     public async Task AddUserAsync(User user)
+    public async Task AddUserAsync(User user)
     {
         _dbContext.Users.Add(user);
         await _dbContext.SaveChangesAsync();
@@ -35,5 +35,9 @@ public class UserService : IUserService
     public async Task<User?> GetUserByEmailAsync(string email)
     {
         return await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+    }
+    public async Task<List<User>> GetAllUsersAsync()
+    {
+        return await _dbContext.Users.ToListAsync();
     }
 }
