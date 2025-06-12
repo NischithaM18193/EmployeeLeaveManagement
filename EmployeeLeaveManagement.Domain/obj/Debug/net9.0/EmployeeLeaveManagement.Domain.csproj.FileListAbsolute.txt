@@ -1,0 +1,12 @@
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/bin/Debug/net9.0/EmployeeLeaveManagement.Domain.deps.json
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/bin/Debug/net9.0/EmployeeLeaveManagement.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/bin/Debug/net9.0/EmployeeLeaveManagement.Domain.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.AssemblyInfoInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.AssemblyInfo.cs
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.csproj.CoreCompileInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.sourcelink.json
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/refint/EmployeeLeaveManagement.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/EmployeeLeaveManagement.Domain.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/EmployeeLeaveManagement/EmployeeLeaveManagement.Domain/obj/Debug/net9.0/ref/EmployeeLeaveManagement.Domain.dll
