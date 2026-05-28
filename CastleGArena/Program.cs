@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "EmployeeLeaveManagement API",
+        Title = "CastleGArena API",
         Version = "v1",
         Description = "API for managing employee leaves",
         Contact = new Microsoft.OpenApi.Models.OpenApiContact
