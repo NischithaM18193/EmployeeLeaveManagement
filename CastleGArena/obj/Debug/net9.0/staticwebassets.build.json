@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ucrGJqFhUUS3KtXAyyv91dXXyCWLa3R9w2tFEhbMIk4=",
+  "Source": "CastleGArena.API",
+  "BasePath": "_content/CastleGArena.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

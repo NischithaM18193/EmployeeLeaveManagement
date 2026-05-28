@@ -1,0 +1,16 @@
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/bin/Debug/net9.0/CastleGArena.Application.deps.json
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/bin/Debug/net9.0/CastleGArena.Application.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/bin/Debug/net9.0/CastleGArena.Application.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/bin/Debug/net9.0/CastleGArena.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/bin/Debug/net9.0/CastleGArena.Domain.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.csproj.AssemblyReference.cache
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.AssemblyInfoInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.AssemblyInfo.cs
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.csproj.CoreCompileInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.sourcelink.json
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGA.FC05E3A6.Up2Date
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/refint/CastleGArena.Application.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/CastleGArena.Application.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Application/obj/Debug/net9.0/ref/CastleGArena.Application.dll

@@ -1,0 +1,12 @@
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/bin/Debug/net9.0/CastleGArena.Domain.deps.json
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/bin/Debug/net9.0/CastleGArena.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/bin/Debug/net9.0/CastleGArena.Domain.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.AssemblyInfoInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.AssemblyInfo.cs
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.csproj.CoreCompileInputs.cache
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.sourcelink.json
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/refint/CastleGArena.Domain.dll
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/CastleGArena.Domain.pdb
+/Users/nischitha/Documents/Nischitha Development brushing/CastleGArena/CastleGArena.Domain/obj/Debug/net9.0/ref/CastleGArena.Domain.dll
