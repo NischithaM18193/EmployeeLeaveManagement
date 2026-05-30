@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "CastleGArena API",
         Version = "v1",
-        Description = "API for managing employee leaves",
+        Description = "API for CastleGArena venture services",
         Contact = new Microsoft.OpenApi.Models.OpenApiContact
         {
             Name = "Nischitha",

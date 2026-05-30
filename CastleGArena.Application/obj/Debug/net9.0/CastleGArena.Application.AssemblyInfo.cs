@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CastleGArena.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb1c179e21596089d8a5ed72888d717578a799f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20d7754efdc8a6104819c999dd8e7e4b5634884d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CastleGArena.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CastleGArena.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
